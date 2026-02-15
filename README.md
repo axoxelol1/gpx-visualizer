@@ -10,3 +10,7 @@ It should work with any GPX file that has timestamps though.
 1. Install dependencies with `npm i`.
 1. Use `npm run dev` to test locally
 1. Use `npm run build` to generate a static site.
+
+## TODO
+
+Ask for current location or use the GPX location to center the map instead of defaulting to Miami.
