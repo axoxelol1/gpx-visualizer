@@ -7,9 +7,13 @@ export function setupMap() {
     style: "https://tiles.openfreemap.org/styles/fiord",
     center: [-80.19, 25.775],
     zoom: 14,
-    pitch: 30,
-    bearing: -15,
   });
+
+  map.addControl(
+    new maplibregl.NavigationControl({ visualizePitch: true }),
+    "top-right",
+  );
+  map.addControl(new maplibregl.FullscreenControl(), "top-right");
 
   map.on("load", async () => {
     map.getStyle().layers.forEach((layer) => {
