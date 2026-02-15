@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/runner.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gpx-visualizer</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="controls">
+      <div>
+        <label for="speed-input">Speed:</label>
+        <input type="number" id="speed-input" value="1" min="1" step="1" />
+      </div>
+      <div>
+        <label for="file-input">GPX files:</label>
+        <input
+          type="file"
+          id="file-input"
+          accept=".gpx"
+          multiple
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <button id="play-button">Play</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
